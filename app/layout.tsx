@@ -1,11 +1,22 @@
 import { ClerkProvider } from '@clerk/nextjs'
-import './globals.css' // Se você tiver um css
+import './globals.css' // Se der erro aqui porque não tem esse arquivo, pode apagar essa linha
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export const metadata = {
+  title: 'Hub PUC Oficial',
+  description: 'Sistema de Matérias',
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
     <ClerkProvider>
       <html lang="pt-br">
-        <body>{children}</body>
+        <body>
+          {children}
+        </body>
       </html>
     </ClerkProvider>
   )
