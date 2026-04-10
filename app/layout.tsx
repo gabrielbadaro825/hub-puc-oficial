@@ -11,7 +11,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <ClerkProvider>
+    // 👇 COLOQUE SUA CHAVE PUBLICA AQUI DENTRO DAS ASPAS
+    <ClerkProvider publishableKey="pk_test_Y2hhcm1pbmctaWd1YW5hLTE3LmNsZXJrLmFjY291bnRzLmRldiQ">
       <html lang="pt-br">
         <body>
           {children}
