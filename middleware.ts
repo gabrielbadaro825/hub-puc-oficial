@@ -4,7 +4,7 @@ export default clerkMiddleware();
 
 export const config = {
   matcher: [
-    // Ignora arquivos internos e estáticos
+    // Pula arquivos internos e estáticos
     '/((?!_next|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)',
     // Sempre roda para APIs
     '/(api|trpc)(.*)',
